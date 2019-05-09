@@ -7,9 +7,17 @@
     body {
         background-image: url(titleimg.jpg);
         text-align:center;
+        background-size:cover;
     }
     </style>
-
+<script>
+  var pics = ["url('provopic2.jpg')", "url('provohike3.jpg')", "url('titleimg.jpg')","url('provohike4.jpg')"];
+  var indx=0;
+function changeBackground(){
+    
+    document.body.style.backgroundImage=pics[++indx%4];
+}
+</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -30,6 +38,7 @@
               <li><a href="Hike2.html">Squaw Peak</a></li>
               <li><a href="Hike3.html">Mt Timpanogos</a></li>
             </ul>
+            <button onclick=changeBackground()>Change Scenery</button>
           </div>
         </nav>
 
