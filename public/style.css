@@ -6,7 +6,6 @@
 .intro{
     padding: 30px;
     margin-top:60px;
-
 }
 .locations .hike {
     padding: 30px;
@@ -18,6 +17,7 @@
     background-color: black;
    text-decoration: none;
    display: inline-block;
+   align-items: center;
    overflow: hidden;
    border: 10px solid black;
    height: 180px;
@@ -27,5 +27,33 @@
 .hike-pic{
     height:100%;
     width:100%;
+}
+
+.container .box {
+    padding: 30px;
+    margin-top: 100px;
+    flex: 1;
+    color: white;
+    font-weight: normal;
+}
+
+.box {
+    vertical-align: top;
+    background-color: black;
+   text-decoration: none;
+   display: inline-block;
+   overflow: scroll;
+   border: 10px solid black;
+   height: 300px;
+   width: 300px;
+   margin: 200px 60px;
+   margin-left: 0px;
+   padding: 20px 20px 20px 20px;
+}
+
+.Map {
+    height: 100%;
+    width: 100%;
+    
     
 }
